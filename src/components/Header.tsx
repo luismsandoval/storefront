@@ -1,5 +1,6 @@
-import { Typography, AppBar, Toolbar } from "@mui/material";
+import { Typography, AppBar, Toolbar, Card } from "@mui/material";
 import { Lightswitch } from "./Lightswitch";
+import { SimpleCart } from "../features/cart/SimpleCart";
 
 export const Header = () => {
   return (
@@ -9,9 +10,7 @@ export const Header = () => {
           Storefront
         </Typography>
         <Lightswitch />
-        <Typography>
-          Cart
-        </Typography>
+        <SimpleCart />
       </Toolbar>
     </AppBar>
   );

@@ -1,7 +1,7 @@
 import { Box, Tabs, Tab } from "@mui/material";
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import { productsSlice } from "./productsSlice";
+import { selectCategory } from "./productsSlice";
 
 export const Categories = () => {
   // const selectedCategory = useAppSelector(
@@ -17,7 +17,7 @@ export const Categories = () => {
         value={tab}
         onChange={(event: React.SyntheticEvent, value: string) => {
           let category = value === "" ? undefined : value;
-          dispatch(productsSlice.actions.selectCategory(category));
+          dispatch(selectCategory(category));
           setTab(value);
         }}
       >
