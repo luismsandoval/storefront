@@ -1,4 +1,4 @@
-import { Typography, AppBar, Toolbar, Card } from "@mui/material";
+import { Typography, AppBar, Toolbar } from "@mui/material";
 import { Lightswitch } from "./Lightswitch";
 import { SimpleCart } from "../features/cart/SimpleCart";
 
