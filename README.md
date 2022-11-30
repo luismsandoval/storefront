@@ -12,6 +12,10 @@ An online shopping portal for a fictional store.
 
 - Material UI for layout and styling
 
-## Instructions
+## Setup
 
-`npm i` in client and server directories to install dependencies. `npm start` server, `npm start` client to run the application.
+### Running the app
+
+- `npm i` in client and server directories to install dependencies.
+
+- `npm start` server, then client to run the application.

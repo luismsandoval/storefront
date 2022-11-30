@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import { SettingsContext } from "./app/context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // for checkout route ?
 
 import { Header } from "./components/Header";
 import { Categories } from "./features/products/Categories";
@@ -18,7 +19,7 @@ import { fetchProducts } from "./features/products/productsSlice";
 function App() {
   const { theme } = useContext(SettingsContext);
   const dispatch = useAppDispatch();
-  
+
   useEffect(() => {
     setTimeout(() => dispatch(fetchProducts()), 5000);
   }, [dispatch]);
@@ -39,8 +40,8 @@ function App() {
           </p>
         </header>
       </div> */}
-        <Footer />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
